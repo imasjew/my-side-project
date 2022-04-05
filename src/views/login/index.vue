@@ -3,12 +3,12 @@
     <div class="title-wrap">登录</div>
     <div class="body-wrap">
       <div class="account-wrap">
-        <input type="text" class="input-account" v-model="account" />
+        <input type="text" class="input-account bs-input" v-model="account" />
       </div>
       <div class="pswd-wrap">
-        <input type="text" class="input-pswd" v-model="pswd" />
+        <input type="text" class="input-pswd bs-input" v-model="pswd" />
       </div>
-      <div class="login-wrap">
+      <div class="btn-wrap">
         <button>登录</button>
         <button>注册</button>
       </div>
@@ -21,6 +21,7 @@ const account = ref('')
 const pswd = ref('')
 </script>
 <style lang="less">
+// @import "../../assets/less/main.less";
 .login-page-wrap {
   min-height: 100vh;
   min-width: 100vw;
@@ -42,7 +43,8 @@ const pswd = ref('')
   }
   .body-wrap {
     margin: 40px;
-    .login-wrap {
+    
+    .btn-wrap {
       margin-top: 24px;
       display: flex;
       justify-content: space-around;
